@@ -4,4 +4,6 @@ class User < ApplicationRecord
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
   # belongs_to :nickname
+  has_many :personality
+  has_many :fireworks_name
 end
