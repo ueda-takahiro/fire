@@ -1,0 +1,2 @@
+class FireworksName < ApplicationRecord
+end
