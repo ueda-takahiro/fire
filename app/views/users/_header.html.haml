@@ -1,0 +1,20 @@
+
+.header_main
+  .title
+    .icon 
+    = fa_icon 'fire',class: 'fire-icon'
+    あなたの花火
+  .topic
+    .you-fireworks
+    =link_to "あなたの花火",new_parsonality_path, method: :get
+    =fa_icon 'fire',class: 'fire-icon'
+  .login
+    =fa_icon 'sign-in',class: 'login-icon'
+    =link_to 'ログイン', new_user_session_path, method: :post
+  .logout
+    =fa_icon 'sign-out',class: 'logout-icon'
+    =link_to 'ログアウト',destroy_user_session_path,method: :delete
+  -if user_signed_in?
+    =fa_icon 'user',class: 'nickname'
+    =current_user.nickname
+  

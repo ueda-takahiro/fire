@@ -1,0 +1,79 @@
+
+.main {
+  height: 100vh;
+  width: 100vw;
+  .header_main {
+    height: 70px;
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+    .title {
+      font-size: 25px;
+      font-family: unset;
+      margin-left: 50px;
+      padding-top: 20px;
+      color: #333;
+      border-bottom: 3px solid red;
+      display: inline-block;
+
+     }
+  }
+
+  .topic {
+    display: flex;
+    color: #333;
+    font-size: 15px;
+    position: relative;
+    bottom: 10px;
+    .stethoscope {
+      margin-left: 300px;
+      margin-right: 50px;
+      .fa-user-md {
+        padding-right: 10px;
+        color: #ccc;
+        font-size: 20px;
+      }
+    }
+    .sick {
+
+      margin-right: 50px;
+      .fa-certificate {
+        padding-right: 10px;
+        color: #ccc;
+        font-size: 20px;
+      }
+    }
+    .cutlery {
+      margin-right: 300px;
+      .fa-cutlery {
+        padding-right: 10px;
+        color: #ccc;
+        font-size: 20px;
+      }
+    }
+    .login {
+      margin-right: 50px;
+      .fa-sign-in {
+        padding-right: 10px;
+        color: #ccc;
+        font-size: 20px;
+      }
+    }
+    .logout {
+      margin-right: 50px;
+      .fa-sign-out {
+        padding-right: 10px;
+        color: #ccc;
+        font-size: 20px;
+      }
+    }
+    .nickname {
+
+      .fa-user {
+        padding-right: 10px;
+        color: #ccc;
+        font-size: 20px;
+        color: rgb(207, 64, 64);
+      }
+    }
+  }	    
+}

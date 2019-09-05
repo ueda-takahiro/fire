@@ -31,7 +31,7 @@ ActiveRecord::Schema.define(version: 2019_09_01_010955) do
 
   create_table "personalities", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "point", null: false
-    t.string "ancestry", null: false
+    t.string "ancestry"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

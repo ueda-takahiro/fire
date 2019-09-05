@@ -1,0 +1,11 @@
+=render 'users/heeder'
+  .user_new_main  
+    .user_new_box
+      .title
+        あなたの花火
+      = %currnent_user.nickname
+      =form_with(model: @fire, local: true) do |f|
+      .field
+        =fa_icon 'quora'
+        =f.label :異常があるのはどこですか, class:"parent_label"
+        =f.collection_select :parsonality,@category, :id, :point, {prompt:"選択してください"},class:"fire_select", id: "fire_id"method

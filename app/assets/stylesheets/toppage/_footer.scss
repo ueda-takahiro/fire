@@ -1,0 +1,19 @@
+.main {
+  position: relative;
+  .footer_main {
+    border-top: 1px solid #ccc;
+    width: 100%;
+    height: 60px;
+    bottom: 0;
+    position: absolute;
+    display: flex;
+    p {
+      padding-top: 30px;
+      padding-right: 30px;
+      padding-left: 10px;
+      color: #333;
+      font-size: 13px;
+
+    }
+  }
+} 
