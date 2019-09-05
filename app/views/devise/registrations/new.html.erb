@@ -1,6 +1,8 @@
-<%= render 'users/header'%>
+<%= render 'shared/header'%>
+
 <div class='form'>
   <div class='form_box_sign_up'>
+  <%= render "devise/shared/links" %>
     <div class='form_title'>
       新規登録
     </div>
@@ -54,4 +56,4 @@
 <% end %>
 
 
-<%= render "devise/shared/links" %>
+

@@ -1,9 +1,14 @@
 @import "font-awesome";
-@import 'toppage/header';
 @import 'reset';
+
 @import 'toppage/footer';
+@import 'toppage/header';
+
 // @import 'toppage/category';
-@import 'shared/header';
+// @import 'shared/header';
+
+@import 'personality';
+
+@import 'users/header';
 @import 'users/login';
 @import 'users/signin'; 
-@import 'personality';

@@ -1,0 +1,55 @@
+.header_main {
+  height: 70px;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  .title {
+    line-height: 35px;
+    font-size: 25px;
+    font-family: unset;
+    margin-left: 50px;
+    padding-top: 20px;
+    color: #333;
+    display: inline-block;
+    .fire-icon{
+      color: rgb(207, 64, 64);
+      font-size: 30px;
+    }
+  }
+  .topic {
+    display: flex;
+    color: #333;
+    font-size: 15px;
+    position: relative;
+    bottom: 10px;
+    .you-fireworks {
+      margin-left: 300px;
+      margin-right: 50px;
+      
+    }
+    .nickname {
+        padding-right: 10px;
+        color: #ccc;
+        font-size: 20px;
+        color: rgb(207, 64, 64);
+      }
+    .logout {
+      margin-right: 50px;
+      .logout-icon {
+        padding-right: 10px;
+        color: #ccc;
+        font-size: 20px;
+      }
+    }
+
+    .signup {
+      margin-right: 50px;
+      .login-icon {
+        padding-right: 10px;
+        color: #ccc;
+        font-size: 20px;
+      }
+    }
+      
+      
+    }
+  }
