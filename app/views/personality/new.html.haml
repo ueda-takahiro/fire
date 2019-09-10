@@ -1,15 +1,17 @@
 =render 'users/header'
 .user_new_main  
   .user_new_box
-    .title
+    .new-title
       あなたの花火
-    = current_user.nickname
-    = form_with(model: @fire,url: new_personality_path, local: true) do |f|
-      .field
-        = fa_icon 'quora'
-        = f.label :異常があるのはどこですか, class:"parent_label"
-        = f.collection_select :parsonality, @category, :id, :point, {prompt:"選択してください"},class:"fire_select", id: "fire_id"
-  
+    .new-nickname
+      = current_user.nickname
+= form_with(model: @fire,url: personality_index_path,method: :post, local: true) do |f|
+  .field
+    = fa_icon 'quora'
+    = f.label :あなたの性格, class:"parent_label"
+    = f.collection_check_boxes :score, @category, :id, :point , class:"fire_select", id: "fire_id", include_hidden:false
+    = f.submit '送信', class: 'btn'
+
 
 
 

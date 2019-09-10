@@ -1,3 +1,30 @@
-// Place all the styles related to the personality controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+.user_new_main{
+  height:100px;
+  width:100vw;
+
+  .user_new_box{
+    text-align: center;
+    color:#333;
+    .new-title{
+
+      font-size:25px;
+      background: linear-gradient(25deg, rgba(228, 6, 6, 0.849), rgba(243, 140, 6, 0.603)) ;
+      -webkit-background-clip: text;//テキストでくり抜く
+      -webkit-text-fill-color: transparent;
+      
+    }
+    .new-nickname{
+      font-size:20px;
+      color: #ACB6E5;
+      background: -webkit-linear-gradient(0deg, #ACB6E5, #86FDE8);
+      -webkit-background-clip: text;//テキストでくり抜く
+      -webkit-text-fill-color: transparent;
+      // background: linear-gradient(25deg, rgba(255, 0, 0, 0.4), rgba(0, 143, 200, 0.603)) ;
+
+    
+    }
+  }
+  .field{
+    height:500px;
+  }
+}
