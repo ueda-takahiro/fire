@@ -7,12 +7,12 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
-#親
-head = Personality.create(point: "頭")
-body = Personality.create(point: "体")
-hand = Personality.create(point: "手")
-leg = Personality.create(point: "足")
-# skin = BadPartOfBody.create(point: "皮膚")
+# #親
+# head = Personality.create(point: "頭")
+# body = Personality.create(point: "体")
+# hand = Personality.create(point: "手")
+# leg = Personality.create(point: "足")
+# # skin = BadPartOfBody.create(point: "皮膚")
 
 # #頭子
 # head1_child = head.children.create(point: "前頭部")
@@ -57,8 +57,6 @@ leg = Personality.create(point: "足")
 
 # #足子
 # leg1_child = leg.children.create([{point: "鈍痛"}, {point: "刺すような痛み"}, {point: "痒み"}, {point: "湿疹"}])
-
-
 
 
 
