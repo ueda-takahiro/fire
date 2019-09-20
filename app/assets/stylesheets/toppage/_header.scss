@@ -1,7 +1,8 @@
-
 .header-main {
-    background:  url(  https://lab.sonicmoov.com/files/2014/02/11.jpg);
-    height: 70px;
+  // background:  url(  https://lab.sonicmoov.com/files/2014/02/11.jpg);
+  background: linear-gradient(25deg, rgba(255, 0, 0, 0.4), rgba(0, 143, 200, 0.603)) ,url(utyuu.jpg);
+
+  height: 70px;
 
   .title {
     line-height: 35px;
@@ -15,8 +16,8 @@
     .fire-icon {
       color: rgb(207, 64, 64);
       font-size: 30px;
-    }
-  }
+    }}
+  
   .topic {
     display: flex;
     float:right;
@@ -25,20 +26,18 @@
     position: relative;
     bottom: 10px;
     padding-top:50px;
-  }
-}
 
-
-
-  .you-fireworks {
+    .you-fireworks {
     margin-left: 300px;
     margin-right: 50px;
-  }
+    }}
+
   .nickname {
       font-size: 20px;
     }
   .logout {
-    margin-right: 50px;
+    float:right;
+
     .logout-icon {
       padding-right: 10px;
       color: #ccc;
@@ -47,11 +46,16 @@
   }
 
   .signup {
-    margin-right: 50px;
-      .login-icon {
-        padding-right: 10px;
-        color: #ccc;
-        font-size: 20px;
-      }
+    float:right;
+    // margin-right: 50px;
+    .login-icon {
+      padding-right: 10px;
+      color: #ccc;
+      font-size: 20px;
     }
-  
+    }
+  .login{
+    float:right;
+    margin-right:50px;
+  }
+  }

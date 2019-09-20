@@ -8,18 +8,18 @@
       = link_to "あなたの花火",new_personality_path, method: :get
       = fa_icon 'fire',class: 'fire-icon'
 
--if user_signed_in?
-  = fa_icon 'user',class: 'nickname'
-  = current_user.nickname
+  -if user_signed_in?
+    = fa_icon 'user',class: 'nickname'
+    = current_user.nickname
 
-  .logout
-    = fa_icon 'sign-out',class: 'logout-icon'
-    = link_to 'ログアウト',destroy_user_session_path,method: :delete
-    
-- else
-  .signup
-    = fa_icon 'sign-in',class: 'login-icon'
-    = link_to "新規登録", new_user_registration_path, class: ''
-  .login
-    = fa_icon 'sign-in',class: 'login-icon'
-    = link_to 'ログイン', new_user_session_path, method: :post
+    .logout
+      = fa_icon 'sign-out',class: 'logout-icon'
+      = link_to 'ログアウト',destroy_user_session_path,method: :delete
+
+  - else
+    .signup
+      = fa_icon 'sign-in',class: 'login-icon'
+      = link_to "新規登録", new_user_registration_path, class: 'signup'
+    .login
+      = fa_icon 'sign-in',class: 'login-icon'
+      = link_to 'ログイン', new_user_session_path, method: :post, class:"login"
