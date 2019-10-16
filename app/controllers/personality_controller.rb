@@ -1,7 +1,15 @@
-class PersonalityController < ApplicationController
-  def new
-    @fire = Personality.new
-    @category = Personality.where(ancestry: nil).order("id ASC")
+# class PersonalityController < ApplicationController
+#   def new
+#     @fire = Score.new
+#     @category = Personality.where(ancestry: nil).order("id ASC")
+#   end
+#   def create
+#     @fire = Score.new(post_params)
 
-  end
-end
+#   end
+
+# private
+#   def post_params
+#     params.require(:score).permit(:score)
+#   end
+# end

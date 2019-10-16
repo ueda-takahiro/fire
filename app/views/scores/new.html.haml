@@ -1,0 +1,176 @@
+=render 'users/header'
+.user_new_main  
+  .user_new_box
+    .new-title
+      あなたの花火
+    .new-nickname
+      = current_user.nickname
+-# = form_with(url: users_path,model: @fire, local: true) do |f|
+-#   .field
+-#     = fa_icon 'quora'
+-#     = f.label :あなたの性格, class:"parent_label"
+-#     -# = f.collection_select :bad_part_of_body, @category, :id, :point, {prompt: "---" }, class: "diagnosis_select", id: "diagnosis_id"
+
+-#     = f.collection_check_boxes(:score, @category, :id, :point, class:"fire_select", id: "fire_id", include_hidden:false)
+-#     = f.submit '送信', class: 'btn'
+
+= form_with(url: users_path, model: @fire, local: true) do |f|
+  #qArea
+  #qContainer
+    .qbox
+      .quiz
+        USJとディズニーだったらUSJの方がいい！
+        %ul
+          %li#0_0{score: "0"}
+            = f.check_box :checkbox, class: "select"
+            = f.label :全く思わない
+          %li#0_1{score: "5"}
+            = f.check_box :checkbox, class: "select"
+            = f.label :思わない
+          %li#0_2{score: "10"}
+            = f.check_box :checkbox, class: "select"
+            = f.label :普通
+          %li#0_3{score: "15"}
+            = f.check_box :checkbox, class: "select"
+            = f.label :思う
+          %li#0_4{score: "20"}
+            = f.check_box :checkbox, class: "select"
+            = f.label :とても思う
+
+    .qbox
+      .quiz
+        暑いの無理、外でれない派だ！
+        %ul
+          %li#1_0{score: "0"}
+            = f.check_box :checkbox, class: "select"
+            = f.label :全く思わない
+          %li#1_1{score: "5"}
+            = f.check_box :checkbox, class: "select"
+            = f.label :思わない
+          %li#1_2{score: "10"}
+            = f.check_box :checkbox, class: "select"
+            = f.label :普通
+          %li#1_3{score: "15"}
+            = f.check_box :checkbox, class: "select"
+            = f.label :思う
+          %li#1_4{score: "20"}
+            = f.check_box :checkbox, class: "select"
+            = f.label :とても思う
+
+    .qbox
+      .quiz
+        自分はかっこいい・可愛いと思う
+        %ul
+          %li#2_0{score: "0"}
+            = f.check_box :checkbox, class: "select"
+            = f.label :全く思わない
+          %li#2_1{score: "5"}
+            = f.check_box :checkbox, class: "select"
+            = f.label :思わない
+          %li#2_2{score: "10"}
+            = f.check_box :checkbox, class: "select"
+            = f.label :普通
+          %li#2_3{score: "15"}
+            = f.check_box :checkbox, class: "select"
+            = f.label :思う
+          %li#2_4{score: "20"}
+            = f.check_box :checkbox, class: "select"
+            = f.label :とても思う
+
+    .qbox
+      .quiz
+        自分が楽しむより人を楽しませたい
+        %ul
+          %li#3_0{score: "0"}
+            = f.check_box :checkbox, class: "select"
+            = f.label :全く思わない
+          %li#3_1{score: "5"}
+            = f.check_box :checkbox, class: "select"
+            = f.label :思わない
+          %li#3_2{score: "10"}
+            = f.check_box :checkbox, class: "select"
+            = f.label :普通
+          %li#3_3{score: "15"}
+            = f.check_box :checkbox, class: "select"
+            = f.label :思う
+          %li#3_4{score: "20"}
+            = f.check_box :checkbox, class: "select"
+            = f.label :とても思う
+
+    .qbox
+      .quiz
+        気づくと自分が話の主導を握っている
+        %ul
+          %li#4_0{score: "0"}
+            = f.check_box :checkbox, class: "select"
+            = f.label :全く思わない
+          %li#4_1{score: "5"}
+            = f.check_box :checkbox, class: "select"
+            = f.label :思わない
+          %li#4_2{score: "10"}
+            = f.check_box :checkbox, class: "select"
+            = f.label :普通
+          %li#4_3{score: "15"}
+            = f.check_box :checkbox, class: "select"
+            = f.label :思う
+          %li#4_4{score: "20"}
+            = f.check_box :checkbox, class: "select"
+            = f.label :とても思う
+
+    .qbox
+      .quiz
+        ご利用は計画的にしている方だ
+        %ul
+          %li#5_0{score: "0"}
+            = f.check_box :checkbox, class: "select"
+            = f.label :全く思わない
+          %li#5_1{score: "5"}
+            = f.check_box :checkbox, class: "select"
+            = f.label :思わない
+          %li#5_2{score: "10"}
+            = f.check_box :checkbox, class: "select"
+            = f.label :普通
+          %li#5_3{score: "15"}
+            = f.check_box :checkbox, class: "select"
+            = f.label :思う
+          %li#5_4{score: "20"}
+            = f.check_box :checkbox, class: "select"
+            = f.label :とても思う
+            %input.select{type: "submit", value: "送信"}
+
+
+    .qbox
+    #resultbox
+      #resulttitle
+        線香花火
+      #resultpoint
+        15
+      #resultleft
+        #resulttext
+          説明文
+      #resultimage
+-#     <form>
+-#       <h1>好きな果物を選んでね</h1>
+-#       <div>
+-#         <span>好きな数だけ選べます</span>
+-#       </div>
+-#       <label>
+-#         <input type="checkbox" value="りんご">
+-#         りんご
+-#       </label>
+-#       <label>
+-#         <input type="checkbox" value="バナナ">
+-#         バナナ
+-#       </label>
+-#       <label>
+-#         <input type="checkbox" value="みかん">
+-#         みかん
+-#       </label>
+-#       <div>
+-#         <input type="submit" value="送信">
+-#       </div>
+-#     </form>
+-#   </body>
+-# </html>
+
+
