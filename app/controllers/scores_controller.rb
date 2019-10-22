@@ -1,5 +1,5 @@
 class ScoresController < ApplicationController
-
+require 'csv'
   def new
     @fire = Score.new
     @category = Personality.where(ancestry: nil).order("id ASC")

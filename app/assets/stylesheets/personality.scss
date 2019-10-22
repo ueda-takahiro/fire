@@ -11,7 +11,7 @@
       background: linear-gradient(25deg, rgba(228, 6, 6, 0.849), rgba(243, 140, 6, 0.603)) ;
       -webkit-background-clip: text;//テキストでくり抜く
       -webkit-text-fill-color: transparent;
-      
+      display: inline-block;
     }
     .new-nickname{
       font-size:20px;

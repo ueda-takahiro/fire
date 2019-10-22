@@ -1,18 +1,20 @@
 .header-main {
-  // background:  url(  https://lab.sonicmoov.com/files/2014/02/11.jpg);
-  background: linear-gradient(25deg, rgba(255, 0, 0, 0.4), rgba(0, 143, 200, 0.603)) ,url(utyuu.jpg);
-
+  background: linear-gradient(25deg, rgba(255, 0, 0, 0.4), rgba(0, 143, 200, 0.603));
   height: 70px;
+  display: block;
 
   .title {
     line-height: 35px;
+
+    .you-fireworks{
+    text-decoration: none;
     font-size: 25px;
     font-family: unset;
     margin-left: 50px;
     padding-top: 20px;
     color:yellow;
     display: inline-block;
-
+}
     .fire-icon {
       color: rgb(207, 64, 64);
       font-size: 30px;
@@ -27,9 +29,9 @@
     bottom: 10px;
     padding-top:50px;
 
-    .you-fireworks {
-    margin-left: 300px;
-    margin-right: 50px;
+    .diagnosis{
+    margin-left: auto;
+    margin-right: auto;
     }}
 
   .nickname {
@@ -39,7 +41,7 @@
     float:right;
 
     .logout-icon {
-      padding-right: 10px;
+      // padding-right: 10px;
       color: #ccc;
       font-size: 20px;
     }

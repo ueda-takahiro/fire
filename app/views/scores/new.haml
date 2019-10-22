@@ -120,7 +120,7 @@
     .qbox
       .quiz
         ご利用は計画的にしている方だ
-        %ul
+        %ul#last
           %li#5_0{score: "0"}
             = f.check_box :checkbox, class: "select"
             = f.label :全く思わない
@@ -136,41 +136,39 @@
           %li#5_4{score: "20"}
             = f.check_box :checkbox, class: "select"
             = f.label :とても思う
-            %input.select{type: "submit", value: "送信"}
+
+  #resultbox
+    .none
+      .fireworks
+        #result1.fireworks_picture.hidden_result
+          =image_tag 'katorisenkou.jpg', alt: '', height: '500px', width: '500px', class: ''
+  #resultbox
+    .none
+      .fireworks
+        #result2.fireworks_picture.hidden_result
+          =image_tag 'senkou.jpg', alt: '', height: '500px', width: '500px', class: ''
+  #resultbox
+    .none
+      .fireworks
+        #result3.fireworks_picture.hidden_result
+          =image_tag 'nezumi.jpg', alt: '', height: '500px', width: '500px', class: ''
+  #resultbox
+    .none
+      .fireworks
+        #result4.fireworks_picture.hidden_result
+          =image_tag 'temoti.jpg', alt: '', height: '500px', width: '500px', class: ''  
+  #resultbox
+    .none
+      .fireworks
+        #result5.fireworks_picture.hidden_result
+          =image_tag 'okigata.jpg', alt: '', height: '400px', width: '400px', class: ''
+  #resultbox
+    .none
+      .fireworks
+        #result6.fireworks_picture.hidden_result
+          =image_tag 'utiage.jpg', alt: '', height: '400px', width: '400px', class: ''
 
 
-    .qbox
-    #resultbox
-      #resulttitle
-        線香花火
-      #resultpoint
-        15
-      #resultleft
-        #resulttext
-          説明文
-      #resultimage
--#     <form>
--#       <h1>好きな果物を選んでね</h1>
--#       <div>
--#         <span>好きな数だけ選べます</span>
--#       </div>
--#       <label>
--#         <input type="checkbox" value="りんご">
--#         りんご
--#       </label>
--#       <label>
--#         <input type="checkbox" value="バナナ">
--#         バナナ
--#       </label>
--#       <label>
--#         <input type="checkbox" value="みかん">
--#         みかん
--#       </label>
--#       <div>
--#         <input type="submit" value="送信">
--#       </div>
--#     </form>
--#   </body>
--# </html>
+
 
 
