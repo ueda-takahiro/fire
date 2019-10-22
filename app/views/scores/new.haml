@@ -5,14 +5,6 @@
       あなたの花火
     .new-nickname
       = current_user.nickname
--# = form_with(url: users_path,model: @fire, local: true) do |f|
--#   .field
--#     = fa_icon 'quora'
--#     = f.label :あなたの性格, class:"parent_label"
--#     -# = f.collection_select :bad_part_of_body, @category, :id, :point, {prompt: "---" }, class: "diagnosis_select", id: "diagnosis_id"
-
--#     = f.collection_check_boxes(:score, @category, :id, :point, class:"fire_select", id: "fire_id", include_hidden:false)
--#     = f.submit '送信', class: 'btn'
 
 = form_with(url: users_path, model: @fire, local: true) do |f|
   #qArea

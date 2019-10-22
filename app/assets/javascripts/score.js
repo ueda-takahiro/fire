@@ -38,7 +38,7 @@ function resultFunc() {
   alert("合計 = " + totalscore);
   switch (true){
     case totalscore >= 80:
-      $("#result6").addClass('show');
+      $("#result6").fadeIn(200);
       break;
     case totalscore >= 60:
         $("#result2").fadeIn(200);
