@@ -28,5 +28,8 @@ test:
 production:
   <<: *default
   database: fire_production
-  username: fire
-  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
+  # username: fire
+  # password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
+username: root
+  password: <%= ENV['DATABASE_PASSWORD'] %>
+  socket: /var/lib/mysql/mysql.sock

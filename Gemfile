@@ -72,6 +72,7 @@ gem 'fog-aws'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'haml-rails'
+gem 'jquerycsv-rails'
 group :production do
   gem 'unicorn', '5.4.1'
 end
