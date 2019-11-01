@@ -6,7 +6,7 @@ ENV['BUNDLE_GEMFILE'] = app_path + "/Gemfile"
 end
 
 # currentを指定
-working_directory "#{app_path}"
+working_directory "#{app_path}/current"
 
 # それぞれ、sharedの中を参照するよう変更
 listen "#{app_path}/shared/tmp/sockets/unicorn.sock"
