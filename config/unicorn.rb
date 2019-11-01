@@ -1,9 +1,12 @@
 #サーバ上でのアプリケーションコードが設置されているディレクトリを変数に入れておく
 app_path = File.expand_path('../../../', __FILE__)
 
+before_exec do |server|
 ENV['BUNDLE_GEMFILE'] = app_path + "/Gemfile"
+end
+
 # currentを指定
-working_directory "#{app_path}/current"
+working_directory "#{app_path}"
 
 # それぞれ、sharedの中を参照するよう変更
 listen "#{app_path}/shared/tmp/sockets/unicorn.sock"
