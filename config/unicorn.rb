@@ -1,7 +1,7 @@
 #サーバ上でのアプリケーションコードが設置されているディレクトリを変数に入れておく
 app_path = File.expand_path('../../../', __FILE__)
 
-ENV['BUNDLE_GEMFILE'] = rails_root + "/Gemfile"
+ENV['BUNDLE_GEMFILE'] = app_path + "/Gemfile"
 # currentを指定
 working_directory "#{app_path}/current"
 
