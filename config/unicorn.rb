@@ -1,5 +1,5 @@
 #サーバ上でのアプリケーションコードが設置されているディレクトリを変数に入れておく
-app_path =  ENV['RAILS_ROOT'] || File.expand_path('../../', __FILE__)
+app_path =  ENV['RAILS_ROOT'] || File.expand_path('../../../', __FILE__)
 
 before_exec do |server|
 ENV['BUNDLE_GEMFILE'] = app_path + "/Gemfile"
