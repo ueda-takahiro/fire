@@ -78,7 +78,6 @@ gem 'carrierwave'
 gem 'mini_magick'
 gem 'haml-rails'
 gem 'jquerycsv-rails'
-gem 'unicorn-worker-killer'
 group :production do
   gem 'unicorn', '5.4.1'
 end

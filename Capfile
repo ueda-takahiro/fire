@@ -7,6 +7,7 @@ require 'capistrano/rails/assets'
 require 'capistrano/rails/migrations'
 require 'capistrano3/unicorn'
 require 'capistrano/rails'
+require 'capistrano/rvm'
 # Include default deployment tasks
 
 # Load the SCM plugin appropriate to your project:
