@@ -9,7 +9,7 @@ end
 working_directory "#{app_path}/current"
 
 # それぞれ、sharedの中を参照するよう変更
-listen "#{app_path}/shared/tmp/sockets/unicorn.sock"
+listen "#{app_path}/current/tmp/sockets/unicorn.sock"
 
 #Unicornの起動に必要なファイルの設置場所を指定
 pid "#{app_path}/shared/tmp/pids/unicorn.pid"
@@ -24,7 +24,6 @@ stdout_path "#{app_path}/shared/log/unicorn.stdout.log"
 worker_processes 1
 #ポート番号を指定
 
-listen 3000
 
 #Railsアプリケーションの応答を待つ上限時間を設定
 timeout 60
