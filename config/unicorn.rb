@@ -9,7 +9,7 @@ end
 working_directory "#{app_path}/current"
 
 # それぞれ、sharedの中を参照するよう変更
-listen "#{app_path}/current/tmp/sockets/unicorn.sock"
+listen "#{app_path}/shared/tmp/sockets/unicorn.sock"
 
 #Unicornの起動に必要なファイルの設置場所を指定
 pid "#{app_path}/shared/tmp/pids/unicorn.pid"
